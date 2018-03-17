@@ -1,0 +1,24 @@
+[user]
+    name = Christian Tiedemann
+    email = CH.Tiedemann@gmx.de
+[github]
+    user = F1shbone
+[core]
+	excludesfile = /Users/cti/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = [mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+    a = add
+    ca = commit -a
+    cam = commit -am
+    s = status
+    pom = push origin master
+    pog = push origin gh-pages
+    puom = pull origin master
+    puog = pull origin gh-pages
+    cob = checkout -b
+[credential]
+    helper = osxkeychain
