@@ -1,0 +1,37 @@
+{
+    "name": "myvscodeextensions",
+    "displayName": "MyVSCodeExtensions",
+    "description": "",
+    "version": "1.0.0",
+    "publisher": "F1shbone",
+    "engines": {
+        "vscode": "^1.21.0"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "extensionDependencies": [ 
+        "AdamCaviness.theme-monokai-dark-soda",
+
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+
+        "octref.vetur",
+        "dariofuzinato.vue-peek",
+        "mrmlnc.vscode-attrs-sorter",
+
+        "codezombiech.gitignore",
+        "dbaeumer.vscode-eslint",
+        "EditorConfig.EditorConfig",
+        "eg2.vscode-npm-script",
+        "eg2.tslint",
+        "esbenp.prettier-vscode",
+        "formulahendry.auto-close-tag",
+        "formulahendry.auto-rename-tag",
+        "NathanRidley.autotrim",
+        "robinbentley.sass-indented",
+        "samverschueren.final-newline",
+        "wayou.vscode-todo-highlight",
+        "xabikos.javascriptsnippets"
+    ]
+}
