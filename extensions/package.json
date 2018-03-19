@@ -1,25 +1,26 @@
 {
-    "name": "myvscodeextensions",
-    "displayName": "MyVSCodeExtensions",
+    "name": "extensions",
+    "displayName": "Extensions",
     "description": "",
     "version": "1.0.0",
     "publisher": "F1shbone",
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/F1shbone/config.git"
+    },
     "engines": {
         "vscode": "^1.21.0"
     },
     "categories": [
         "Extension Packs"
     ],
-    "extensionDependencies": [ 
+    "extensionDependencies": [
         "AdamCaviness.theme-monokai-dark-soda",
-
         "christian-kohler.npm-intellisense",
         "christian-kohler.path-intellisense",
-
         "octref.vetur",
         "dariofuzinato.vue-peek",
         "mrmlnc.vscode-attrs-sorter",
-
         "codezombiech.gitignore",
         "dbaeumer.vscode-eslint",
         "EditorConfig.EditorConfig",
@@ -32,6 +33,7 @@
         "robinbentley.sass-indented",
         "samverschueren.final-newline",
         "wayou.vscode-todo-highlight",
-        "xabikos.javascriptsnippets"
+        "xabikos.javascriptsnippets",
+        "shd101wyy.markdown-preview-enhanced"
     ]
 }

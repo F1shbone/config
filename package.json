@@ -1,0 +1,22 @@
+{
+  "name": "config",
+  "version": "1.0.0",
+  "description": "Personal checklist for setting up a new Mac's dev environment.",
+  "main": "-",
+  "scripts": {
+    "vsce": "cd ./extensions && vsce package && mv *.vsix .. && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/F1shbone/config.git"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/F1shbone/config/issues"
+  },
+  "homepage": "https://github.com/F1shbone/config#readme",
+  "dependencies": {
+    "vsce": "^1.37.6"
+  }
+}
