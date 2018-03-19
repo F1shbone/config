@@ -80,7 +80,10 @@ nvm install node --reinstall-packages-from=node
 
 ## VS Code
 
+Create Extension-Package and install it
+
 ```bash
+npm run vsce
 code --install-extension './extensions-1.0.0.vsix'
 ```
 
