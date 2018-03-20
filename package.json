@@ -4,7 +4,8 @@
   "description": "Personal checklist for setting up a new Mac's dev environment.",
   "main": "-",
   "scripts": {
-    "vsce": "cd ./extensions && vsce package && mv *.vsix .. && cd .."
+    "vsce": "cd ./extensions && vsce package && mv *.vsix .. && cd ..",
+    "vssettings": "cp ./vs-settings.json ~/Library/'Application Support'/Code/User/ && mv ~/Library/'Application Support'/Code/User/vs-settings.json ~/Library/'Application Support'/Code/User/settings.json"
   },
   "repository": {
     "type": "git",
