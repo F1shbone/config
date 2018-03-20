@@ -55,6 +55,25 @@ You can generate an SSH key to distribute.
 ssh-keygen -t rsa -b 4096 -C "CH.Tiedemann@gmx.de"
 ```
 
+1. Be sure that you have a running ssh-agent in background before doing anything.
+  To check if ssh-agent is running by:
+  ``` bash
+  pgrep 'ssh-agent'
+  ```
+
+2. Edit `~/.ssh/config` (Create if it doesn't exist as su ):
+  ```
+  Host *
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/id_rsa
+  ```
+
+3. Then add that key agent ( that would be once ):
+  ``` bash
+  ssh-add -K ~/.ssh/id_rsa
+  ```
+
 ## Node.js
 We’re going to use [Node Version Manager (nvm)](https://github.com/creationix/nvm) to install Node.js.
 
@@ -88,3 +107,12 @@ code --install-extension './extensions-1.0.0.vsix'
 
 npm run vssettings
 ```
+
+Add a command to Finder services in Mac OSX to open a folder in VS Code
+- Open Automator
+- File -> New -> Service
+- Change "Service Receives" to "files or folders" in "Finder"
+- Add a "Run Shell Script" action
+- Change "Pass input" to "as arguments"
+- Paste the following in the shell script box: `open -n -b "com.microsoft.VSCode" --args "$*"`
+- Save it as something like "Open in Visual Studio Code"
