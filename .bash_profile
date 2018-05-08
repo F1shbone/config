@@ -21,6 +21,12 @@ alias editgit='code ~/.gitconfig'
 alias editbash='code ~/.bash_profile'
 alias resource='source ~/.bash_profile && echo "Done!"'
 alias vi=vim
+alias serve='python -m SimpleHTTPServer'
+
+## Network on/off
+## Create profiles 'Online' & 'Offline' under 'preferences/network'
+alias neton='sudo networksetup -switchtolocation Online'
+alias netoff='sudo networksetup -switchtolocation Offline' 
 
 ## Homebrew
 alias brewup='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
@@ -35,3 +41,8 @@ alias ios='open /Applications/Xcode.app/Contents/Developer/Applications/Simulato
 
 # VS Code
 export PATH=/Applications/'Visual Studio Code.app'/Contents/Resources/app/bin:$PATH
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

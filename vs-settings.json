@@ -1,67 +1,70 @@
 {
-    "workbench.colorTheme": "Monokai Dark Soda",
-
-    "files.autoSave": "onFocusChange",
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-
-    "attrsSorter.order": [
-      "is",
-      "v-for",
-      "v-if",
-      "v-else-if",
-      "v-else",
-      "v-show",
-      "v-cloak",
-      "v-once",
-      "v-pre",
-      "id",
-      "ref",
-      "key",
-      "slot",
-      "v-model",
-      "v-model.+",
-      "v-bind",
-      "v-bind.+",
-      ":.+",
-      "v-text",
-      "v-text.+",
-      "v-html",
-      "v-html.+",
-      "class",
-      "v-on.+",
-      "@.+",
-      "name",
-      "data-.+",
-      "ng-.+",
-      "src",
-      "for",
-      "type",
-      "href",
-      "values",
-      "title",
-      "alt",
-      "role",
-      "aria-.+",
-      "$unknown$"
-    ],
-  
-    "prettier.eslintIntegration": true,
-    "prettier.singleQuote": true,
-    "prettier.semi": false,
-  
-    "eslint.autoFixOnSave": true,
-    "eslint.validate": [
-      {
-        "autoFix": true,
-        "language": "javascript"
-      },
-      {
-        "autoFix": true,
-        "language": "vue"
-      }
-    ]
-  }
+  "workbench.colorTheme": "Monokai Dark Soda",
+  "files.autoSave": "onFocusChange",
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.fontFamily":
+    "Fira Code, 'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "editor.formatOnSave": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "attrsSorter.order": [
+    "is",
+    "v-for",
+    "v-if",
+    "v-else-if",
+    "v-else",
+    "v-show",
+    "v-cloak",
+    "v-once",
+    "v-pre",
+    "id",
+    "ref",
+    "key",
+    "slot",
+    "v-model",
+    "v-model.+",
+    "v-bind",
+    "v-bind.+",
+    ":.+",
+    "v-text",
+    "v-text.+",
+    "v-html",
+    "v-html.+",
+    "class",
+    "v-on.+",
+    "@.+",
+    "name",
+    "data-.+",
+    "ng-.+",
+    "src",
+    "for",
+    "type",
+    "href",
+    "values",
+    "title",
+    "alt",
+    "role",
+    "aria-.+",
+    "$unknown$"
+  ],
+  "npm.enableScriptExplorer": true,
+  "prettier.eslintIntegration": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "autoFix": true,
+      "language": "javascript"
+    },
+    {
+      "autoFix": true,
+      "language": "vue"
+    }
+  ],
+  "[handlebars]": {
+    "editor.formatOnSave": false
+  },
+  "window.zoomLevel": 0
+}

@@ -1,7 +1,7 @@
 tap 'caskroom/cask'
+tap 'caskroom/fonts'
 
 brew 'git'
-brew 'npm'
 
 cask 'visual-studio-code'
 cask 'flux'
@@ -14,6 +14,8 @@ Cask 'postman'
 cask 'sequel-pro'
 cask 'sourcetree'
 cask 'spectacle'
+
+cask 'font-fira-code'
 
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
