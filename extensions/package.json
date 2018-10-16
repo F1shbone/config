@@ -5,9 +5,9 @@
     "version": "1.0.0",
     "publisher": "F1shbone",
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/F1shbone/config.git"
+        "url": "https://github.com/F1shbone/config/extensions"
     },
+    "icon": "extension-pack-icon.png",
     "engines": {
         "vscode": "^1.21.0"
     },
