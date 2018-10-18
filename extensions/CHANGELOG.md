@@ -7,6 +7,7 @@
     - `robertohuertasm.vscode-icons`
   - Language Support:
     - `vscoss.vscode-ansible`
+    - `sharat.vscode-brewfile`
     - `wholroyd.jinja`
     - `sysoev.language-stylus`
     - `dawhite.mustache`

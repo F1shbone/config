@@ -1,15 +1,16 @@
-[user]
-    name = Christian Tiedemann
-    email = CH.Tiedemann@gmx.de
-[github]
-    user = F1shbone
 [core]
 	excludesfile = /Users/cti/.gitignore_global
 [difftool "sourcetree"]
 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = [mergetool "sourcetree"]
+	path = 
+[mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[user]
+	name = Christian Tiedemann
+	email = cti@financial.com
+[github]
+    user = cti-financial-com
 [alias]
     a = add
     ca = commit -a
@@ -22,3 +23,5 @@
     cob = checkout -b
 [credential]
     helper = osxkeychain
+[commit]
+	template = /Users/cti/.stCommitMsg

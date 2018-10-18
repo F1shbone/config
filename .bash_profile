@@ -39,10 +39,10 @@ alias p='cd ~/Documents/Checkouts/Playground'
 ## Mobile iOS testing
 alias ios='open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app'
 
-# VS Code
+## VS Code
 export PATH=/Applications/'Visual Studio Code.app'/Contents/Resources/app/bin:$PATH
 
-# NVM
+## NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

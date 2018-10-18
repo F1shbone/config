@@ -6,6 +6,7 @@
 
 ## Language Support
 - Ansible `vscoss.vscode-ansible`
+- Brewfile `sharat.vscode-brewfile`
 - Jinja `wholroyd.jinja`
 - language-stylus `sysoev.language-stylus`
 - Mustache `dawhite.mustache`
