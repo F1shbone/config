@@ -15,25 +15,59 @@
         "Extension Packs"
     ],
     "extensionDependencies": [
+        // Theme
         "AdamCaviness.theme-monokai-dark-soda",
-        "christian-kohler.npm-intellisense",
-        "christian-kohler.path-intellisense",
+        "robertohuertasm.vscode-icons",
+
+        // Languages
+        "vscoss.vscode-ansible",
+        "wholroyd.jinja",
+        "sysoev.language-stylus",
+        "dawhite.mustache",
+        "shanoor.vscode-nginx",
+        "robinbentley.sass-indented",
+        "marcostazi.vs-code-vagrantfile",
         "octref.vetur",
-        "dariofuzinato.vue-peek",
-        "mrmlnc.vscode-attrs-sorter",
-        "codezombiech.gitignore",
+
+        // Snippets
+        "xabikos.javascriptsnippets",
+
+        // Linting/Formatting
         "dbaeumer.vscode-eslint",
-        "EditorConfig.EditorConfig",
-        "eg2.vscode-npm-script",
-        "eg2.tslint",
         "esbenp.prettier-vscode",
+        "eg2.tslint",
+
+        // Utility
         "formulahendry.auto-close-tag",
         "formulahendry.auto-rename-tag",
         "NathanRidley.autotrim",
-        "robinbentley.sass-indented",
+        "mitchdenny.ecdc",
         "samverschueren.final-newline",
+        "wix.vscode-import-cost",
+        "shd101wyy.markdown-preview-enhanced",
+        "eg2.vscode-npm-script",
+        "christian-kohler.npm-intellisense",
+        "christian-kohler.path-intellisense",
+        "mrmlnc.vscode-scss",
+        "mrmlnc.vscode-attrs-sorter",
         "wayou.vscode-todo-highlight",
-        "xabikos.javascriptsnippets",
-        "shd101wyy.markdown-preview-enhanced"
+        "gruntfuggly.todo-tree",
+        "mike-co.import-sorter",
+        "dariofuzinato.vue-peek",
+
+        // Git
+        "codezombiech.gitignore",
+        "eamodio.gitlens",
+
+        // Debugging/Testing
+        "msjsdiag.debugger-for-chrome",
+        "orta.vscode-jest",
+        "firsttris.vscode-jest-runner",
+
+        // VS Code Extension
+        "compulim.vscode-clock",
+        "editorconfig.editorconfig",
+        "ms-vsliveshare.vsliveshare",
+        "shyykoserhiy.vscode-spotify"
     ]
 }
