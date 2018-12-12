@@ -18,6 +18,10 @@ cask 'mysqlworkbench'
 cask 'opera'
 cask 'spotify'
 
+cask 'virtualbox'
+cask 'vagrant'
+cask 'vagrant-manager'
+
 cask 'font-fira-code'
 
 mas 'Numbers', id: 409203825
