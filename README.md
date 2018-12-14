@@ -4,8 +4,8 @@ Personal checklist for setting up a new Mac's dev environment.
 
 ## Finder:
 
-* Sidebar > Enable "Show Harddrive"
-* Advanced > Enable "Show all filename extensions"
+- Sidebar > Enable "Show Harddrive"
+- Advanced > Enable "Show all filename extensions"
 
 ```bash
 chflags nohidden ~/Library
@@ -18,15 +18,17 @@ killall Finder
 
 ## Preferences:
 
-* Trackpad/Mouse > Point & Click > Enable "Tap to click"
-* Trackpad/Mouse > Scroll & Zoom > Disable "Scroll direction: Natural"
+- Trackpad/Mouse > Point & Click > Enable "Tap to click"
+- Trackpad/Mouse > Scroll & Zoom > Disable "Scroll direction: Natural"
 
-* Keyboard > Text > Disable “Correct spelling automatically”
+- Keyboard > Text > Disable “Correct spelling automatically”
 
-* Security and Privacy > FileVault > On (makes sure SSD is securely encrypted)
-* Security and Privacy > Firewall > On (extra security measure)
-* Security and Privacy > General > App Store and identified developers
-* File Sharing > Off
+- Security and Privacy > FileVault > On (makes sure SSD is securely encrypted)
+- Security and Privacy > Firewall > On (extra security measure)
+- Security and Privacy > General > App Store and identified developers
+- File Sharing > Off
+
+## Add User to sudoes File
 
 ## Homebrew:
 
@@ -129,10 +131,10 @@ npm run vssettings
 
 Add a command to Finder services in Mac OSX to open a folder in VS Code
 
-* Open Automator
-* File -> New -> Service
-* Change "Service Receives" to "files or folders" in "Finder"
-* Add a "Run Shell Script" action
-* Change "Pass input" to "as arguments"
-* Paste the following in the shell script box: `open -n -b "com.microsoft.VSCode" --args "$*"`
-* Save it as something like "Open in Visual Studio Code"
+- Open Automator
+- File -> New -> Quick Action
+- Change "Service Receives" to "files or folders" in "Finder"
+- Add a "Run Shell Script" action
+- Change "Pass input" to "as arguments"
+- Paste the following in the shell script box: `open -n -b "com.microsoft.VSCode" --args "$*"`
+- Save it as something like "Open in Visual Studio Code"
