@@ -12,7 +12,6 @@
   "explorer.confirmDragAndDrop": false,
   "breadcrumbs.enabled": true,
   "npm.enableScriptExplorer": true,
-
   // Languages
   "[handlebars]": {
     "editor.formatOnSave": false
@@ -20,12 +19,12 @@
   "markdown-preview-enhanced.breakOnSingleNewLine": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
-
   // Formatting
   "editor.formatOnSave": true,
   "html.format.wrapAttributes": "force-expand-multiline",
   "prettier.eslintIntegration": true,
   "prettier.singleQuote": true,
+  "prettier.printWidth": 120,
   "eslint.autoFixOnSave": true,
   "eslint.validate": [
     {
@@ -89,13 +88,17 @@
     "aria-.+",
     "$unknown$"
   ],
-
   // Extension Settings
   "todo-tree.defaultHighlight": {
     "foreground": "green",
     "type": "none"
   },
-  "todo-tree.tags": ["TODO", "TODO:", "FIXME", "FIXME:"],
+  "todo-tree.tags": [
+    "TODO",
+    "TODO:",
+    "FIXME",
+    "FIXME:"
+  ],
   "todo-tree.customHighlight": {
     "TODO": {},
     "TODO:": {},
