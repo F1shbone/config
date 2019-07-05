@@ -13,6 +13,7 @@ cask 'fork'
 cask 'enpass'
 cask 'gimp'
 cask 'google-chrome'
+cask 'iterm2'
 cask 'marta'
 cask 'mysqlworkbench'
 cask 'opera'
@@ -27,3 +28,4 @@ cask 'font-fira-code'
 mas 'Numbers', id: 409203825
 mas 'Pages', id: 409201541
 mas 'Todoist', id: 585829637
+mas 'istat-menus', id: 1319778037

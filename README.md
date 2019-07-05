@@ -30,6 +30,18 @@ killall Finder
 
 ## Add User to sudoes File
 
+Switch to admin user:
+
+```bash
+sudo visudo
+
+# Add after
+# > # User privilege specification
+# > root	ALL=(ALL) ALL
+# > %admin	ALL=(ALL) ALL
+<USER> ALL=(ALL) ALL
+```
+
 ## Homebrew:
 
 ```bash
@@ -43,13 +55,27 @@ brew install mas
 brew bundle install
 ```
 
-## Bash
-
-Copy `.bash_profile` into our home folder.
+## ZSH
 
 ```bash
-source ~/.bash_profile
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# Fix Fonts
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
 ```
+
+## iTerm2
+
+- Preferences > Profiles > Colors > Color Presents (on the bottom right) > Choose Solarized Dark
+- Preferences > Profiles > Text > Font > Change Font > Fira Mono
+- Preferences > Profiles > Window > Columns: 125
+- Preferences > Profiles > Window > Rows: 35
 
 ## Github
 
@@ -90,7 +116,7 @@ ssh-add -K ~/.ssh/id_rsa
 We’re going to use [Node Version Manager (nvm)](https://github.com/creationix/nvm) to install Node.js.
 
 ```bash
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | bash
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh | zsh
 ```
 
 Restart terminal and install the latest version.
@@ -123,9 +149,7 @@ nvm install node --reinstall-packages-from=node
 Create Extension-Package and install it
 
 ```bash
-npm run vsce
-code --install-extension './extensions-1.0.0.vsix'
-
+./vscExtensions.sh
 npm run vssettings
 ```
 
