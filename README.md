@@ -68,6 +68,8 @@ cd fonts
 # clean-up a bit
 cd ..
 rm -rf fonts
+
+cp .zshrc ~/
 ```
 
 ## iTerm2
@@ -146,11 +148,10 @@ nvm install node --reinstall-packages-from=node
 
 ## VS Code
 
-Create Extension-Package and install it
+Install all extensions
 
 ```bash
 ./vscExtensions.sh
-npm run vssettings
 ```
 
 Add a command to Finder services in Mac OSX to open a folder in VS Code

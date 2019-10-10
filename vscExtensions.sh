@@ -1,35 +1,43 @@
 #!/usr/bin/env bash
 
 EXTENSIONS=(
+    # Theme
     "AdamCaviness.theme-monokai-dark-soda"
+    "thenikso.github-plus-theme"
+    # Languages
     "vscoss.vscode-ansible"
     "sharat.vscode-brewfile"
     "wholroyd.jinja"
     "sysoev.language-stylus"
     "dawhite.mustache"
     "shanoor.vscode-nginx"
-    "robinbentley.sass-indented"
+    "syler.sass-indented"
     "marcostazi.vs-code-vagrantfile"
+    # JavaScript
     "octref.vetur"
     "xabikos.javascriptsnippets"
-    "dbaeumer.vscode-eslint"
+    # Linting
     "esbenp.prettier-vscode"
+    "dbaeumer.vscode-eslint"
     "eg2.tslint"
+    "tombonnike.vscode-status-bar-format-toggle"
+    # Code Utility
     "formulahendry.auto-close-tag"
     "formulahendry.auto-rename-tag"
     "NathanRidley.autotrim"
     "mitchdenny.ecdc"
     "samverschueren.final-newline"
+    "mike-co.import-sorter"
     "wix.vscode-import-cost"
+    "mrmlnc.vscode-scss"
+    "mrmlnc.vscode-attrs-sorter"
+    # Editor
     "shd101wyy.markdown-preview-enhanced"
     "eg2.vscode-npm-script"
     "christian-kohler.npm-intellisense"
     "christian-kohler.path-intellisense"
-    "mrmlnc.vscode-scss"
-    "mrmlnc.vscode-attrs-sorter"
     "wayou.vscode-todo-highlight"
     "gruntfuggly.todo-tree"
-    "mike-co.import-sorter"
     "dariofuzinato.vue-peek"
     "codezombiech.gitignore"
     "eamodio.gitlens"
@@ -40,6 +48,10 @@ EXTENSIONS=(
     "editorconfig.editorconfig"
     "ms-vsliveshare.vsliveshare"
     "shyykoserhiy.vscode-spotify"
+    "alefragnani.bookmarks"
+    "streetsidesoftware.code-spell-checker"
+    "cssho.vscode-svgviewer"
+    "visualstudioexptteam.vscodeintellicode"
 )
 
 for i in "${EXTENSIONS[@]}"
