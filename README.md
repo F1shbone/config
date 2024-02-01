@@ -78,6 +78,9 @@ cp .zshrc ~/
 - Preferences > Profiles > Text > Font > Change Font > Fira Mono
 - Preferences > Profiles > Window > Columns: 125
 - Preferences > Profiles > Window > Rows: 35
+- Preferences > Profiles > Keys > Add
+    - Move cursor one word left:  ⌥ + ← Send Hex Codes: `0x1b 0x62`
+    - Move cursor one word right: ⌥ + → Send Hex Codes: `0x1b 0x66`
 
 ## Github
 
