@@ -1,4 +1,4 @@
 node_modules/
 extensions-*.vsix
 .access_token
-__cti_
+__cti_*
