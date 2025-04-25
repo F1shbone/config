@@ -72,6 +72,7 @@ ZSH_THEME="agnoster"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+#  thefuck
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -111,11 +112,13 @@ alias editgit='code ~/.gitconfig'
 alias editzsh='code ~/.zshrc'
 alias vi=vim
 alias python=python3
+alias python2=python3
 
 ## Switch repos
 alias h='cd ~/'
 alias w='cd ~/repositories/financial.com'
 alias p='cd ~/repositories/playground'
+alias t='cd ~/repositories/talks'
 
 ## SSH
 /usr/bin/keychain -q --nogui $HOME/.ssh/id_rsa
@@ -126,6 +129,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 source ~/.nvm/nvm.sh
+
 
 # bun completions
 [ -s "/home/cti_wsl/.bun/_bun" ] && source "/home/cti_wsl/.bun/_bun"
@@ -141,3 +145,10 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# keep terminal path
+keep_current_path() {
+  printf "\e]9;9;%s\e\\" "$(wslpath -w "$PWD")"
+}
+precmd_functions+=(keep_current_path)
+#
